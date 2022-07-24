@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+      body{
+        background-color: honeydew;
+        text-align: center;
+      }
+    </style>
+</head>
+
+<body>
+    <h2>Please Make Your Order :</h2>
+    <form action="backend.php">
+       
+        <!-- <label for="name">Name</label> -->
+        
+        <div>
+           
+            Name... : <input type="text" name="MyName" id="name">
+        </div><br>
+       
+        <!-- <label for="role">Phone No.</label> -->
+        <div>
+            Number : <input type="text" name="MyRole" id="role">
+        </div><br>
+        <!--Name is a attribute here which only used for storing the content of text type in MyRole-->
+        <!-- <label for="email">Email:</label> -->
+        <div>
+            Email.... : <input type="email" name="MyEmail" id="email">
+        </div><br>
+        <!-- <div>
+            Date: <input type="date" name="MyDate">
+        </div><br> -->
+        <!-- <label for="bonus">Rating</label> -->
+        <div>
+            Rating&#9829; : <input type="number" name="Mybonus" id="bonus">
+        </div><br>
+        <div>
+            <label for="eligibility">Are you Near to our Restaurant?</label>
+            <input type="checkbox" name="Myeligibilty" id="eligibility">
+            <!--by using checked the given box in form already checked-->
+        </div><br>
+        <!-- <label for="gender">Gender:</label> -->
+        <div>
+           Gender : Male <input type="radio" name="MyGender" id="gender"> FeMale <input type="radio" name="MyGender"
+                id="gender"> others <input type="radio" name="MyGender" id="gender">
+        </div><br>
+        <!--in this radio type only one will select out of there 3 option M F O-->
+        <label for="introduction">Give us your valuable feeback:</label>
+        <div>
+            <br> <textarea name="my text" cols="30" rows="3" id="introduction"></textarea>
+        </div>
+        <label for="car">Veg or Nonveg ?</label>
+        <div>
+            <!--If i use selected option then by default given item already selected-->
+            <select name="mycar" id="car">
+                <option value="ind" selected>Vegetarian</option>
+                <option value="swf" >Nonvegetarian</option>
+                </option>
+            </select>
+        </div>
+        <br>
+        <input type="submit" value="Submit Now">
+        <input type="reset" value="Reset Now">
+        </div><br>
+    </form>
+</body>
+
+</html>
